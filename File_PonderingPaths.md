@@ -43,6 +43,10 @@ Please use the `cd` utility to change directory appropriately. <br>
 So invoked '/usr/bin' directioray by using 'cd' and then gave '/challenge/run'.
 
 
+## Implicit relative paths
+> **flag** : 
+
+
 
 
 
