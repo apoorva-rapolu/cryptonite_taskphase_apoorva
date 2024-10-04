@@ -44,7 +44,26 @@ So invoked '/usr/bin' directioray by using 'cd' and then gave '/challenge/run'.
 
 
 ## Implicit relative paths
-> **flag** : 
+> **flag** : pwn.college{QlDWe61-3pykQJVYJXikgD9gFAm.dlDN1QDLxgDO0czW}
+
+Tried running /challeneg/run, it gave
+> Incorrect... <br?
+You are not currently in the / directory. <br>
+Please use the `cd` utility to change directory appropriately. <br>
+
+So invoked '/' directory by using 'cd' <br>
+from the example I figured out that if my cwd is '/', my relative path should be 'challenge/run'.
+
+
+## Explicit relative paths
+>**flag** : pwn.college{wtc4e0McYDyBPB9Kx_jVq29Bw21.dBTN1QDLxgDO0czW}
+
+So invoked '/' directory bu using 'cd' <br>
+ my cwd is '/', my relative path should be 'challenge/run', but it gave : <br>
+ >Incorrect... <br>
+This challenge must be called with a relative path that explicitly starts with a `.`! <br>
+
+so then I gave '. /challenge/run'
 
 
 
