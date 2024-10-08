@@ -18,7 +18,7 @@ accessing flag file using cat command `cat /flag`
 pwn.college{0Fz44k9hGtdCgs58w0ubX5k4B8O.dBjM5QDLxgDO0czW}
 ```
 
-flag was hidden in directionary /opt/ida/dbgsrv and it was retrieved by absolute paths using cat command 
+flag was hidden in directionary `/opt/ida/dbgsrv` and it was retrieved by absolute paths using `cat` command 
  `cat /opt/ida/dbgsrv/flag`
 
 ## grepping for a needle in a haystack
