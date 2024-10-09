@@ -59,7 +59,19 @@ Correct usage! Your flag: pwn.college{kPm_wHtCJb49TsODjgX2k1_Y6vO.dVTM4QDLxgDO0c
 ```
 
 ## searching for manuals
-
+```
+hacker@man~searching-for-manuals:~$ man -k challenge
+cmxuxusdug (1)       - print the flag!
+hacker@man~searching-for-manuals:~$ man cmxuxusdug
+```
+```
+--cmxuxu NUM
+print the flag if NUM is 224
+```
+```
+hacker@man~searching-for-manuals:~$ /challenge/challenge --cmxuxu 224
+Correct usage! Your flag: pwn.college{c2mRNYC2CxuUx40ZusdQSugHAe0.dZTM4QDLxgDO0czW}
+```
 ## Helpful Programs
 ```
 hacker@man~helpful-programs:~$ /challenge/challenge --help
