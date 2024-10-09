@@ -88,7 +88,8 @@ pwn.college{Ukpi0gL9poFRbPjcVD0AmmXAduX.dFjM5QDLxgDO0czW}
 ```
 hacker@piping~writing-to-multiple-programs:~$ /challenge/hack |tee >(/challenge/the) | /challenge/planet
 Congratulations, you have duplicated data into the input of two programs!
-Here is your flag:                                                                                                           pwn.college{0SpIvqi8aaS79XCl3WP7mnnwyNN.dBDO0UDLxgDO0czW}
+Here is your flag:
+pwn.college{0SpIvqi8aaS79XCl3WP7mnnwyNN.dBDO0UDLxgDO0czW}
 ```
 
 ## Split-piping stderr and stdout
