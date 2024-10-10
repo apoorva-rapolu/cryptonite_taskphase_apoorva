@@ -109,6 +109,8 @@ pwn.college{Qw4jCLZ4TUr05wsVbr1n4rfebYR.dFzM4QDLxgDO0czW}
 ## finding files
 ```
 hacker@commands~finding-files:~$ find / -name flag
+
+pwn.college{4kRCiQKdtPsKB62fSxua36Qn7Jf.dJzM4QDLxgDO0czW}
 ```
 
 
