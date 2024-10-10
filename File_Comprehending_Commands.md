@@ -72,6 +72,21 @@ pwn.college{w6N1bv9uCHf06nGw0jMt-Y9kFxu.dBTN4QDLxgDO0czW}
 
 ## An Epic Filesystem Quest
 ```
+hacker@commands~an-epic-filesystem-quest:~$ cd /
+hacker@commands~an-epic-filesystem-quest:/$ ls
+CLUE  boot       dev  flag  lib    lib64   media  nix  proc  run   srv  tmp  var
+bin   challenge  etc  home  lib32  libx32  mnt    opt  root  sbin  sys  usr
+hacker@commands~an-epic-filesystem-quest:/$ cat CLUE
+Tubular find!
+The next clue is in: /usr/lib/x86_64-linux-gnu/qt-default/qtchooser
+The next clue is **delayed** --- it will not become readable until you enter the directory with 'cd'.
+hacker@commands~an-epic-filesystem-quest:/$ cd /usr/lib/x86_64-linux-gnu/qt-default/qtchooser
+hacker@commands~an-epic-filesystem-quest:/usr/lib/x86_64-linux-gnu/qt-default/qtchooser$ ls
+GIST  default.conf
+hacker@commands~an-epic-filesystem-quest:/usr/lib/x86_64-linux-gnu/qt-default/qtchooser$ cat GIST
+Congratulations, you found the clue!
+The next clue is in: /usr/local/lib/python3.8/dist-packages/jedi/third_party/django-stubs/django-stubs/contrib/staticfiles/management/commands
+Watch out! The next clue is **trapped**. You'll need to read it out without 'cd'ing into the directory; otherwise, the clue will self destruct!    
 ```
 
 ## making directionaries 
