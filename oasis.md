@@ -44,6 +44,11 @@ the flag is in the format:
 OASIS{B17W153_MY573RY}
 ```
 ## Jekylle and Hide!
+By using inspect element `book.js` and `script.js`
+
+```
+OASIS{th15_15_part1_@nd_h3r3_go35_1h3_n3xt!!}
+```
 
 
 ## Keynough is enough
@@ -62,6 +67,7 @@ using a cyberchef decoder we get the output and the flag :
 ```
 OASIS{l0wk3y_t00_s0ft_sp0k3n_3h}
 ```
+
 
 
 
