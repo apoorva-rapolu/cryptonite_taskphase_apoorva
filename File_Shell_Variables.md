@@ -98,9 +98,11 @@ hacker@variables~reading-input:~$ read -p "INPUT: " PWN
 INPUT: COLLEGE
 You've set the PWN variable properly! As promised, here is the flag:
 pwn.college{Iv7H8Ka6UZ61vI17y51umwQLY7O.dhzN1QDLxgDO0czW}
+```
 
 ## Reading Files
 ```
+
 hacker@variables~reading-files:~$ read PWN < /challenge/read_me
 You've set the PWN variable properly! As promised, here is the flag:
 pwn.college{E8X_z2rm-RaftAjMZI9DyTkIr-s.dBjM4QDLxgDO0czW}
