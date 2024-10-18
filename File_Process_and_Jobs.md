@@ -95,7 +95,86 @@ pwn.college{sYjYAFaNYBi86VD0vXdxteWoJgP.dZDN4QDLxgDO0czW}
 ```
 
 ## Backgrounding Process
+Same as before one but we use `bg` command to resume processes in the background <br>
+instead of resuming processes in the foreground with the `fg` command.
+```
+hacker@processes~backgrounding-processes:~$ /challenge/run
+I'll only give you the flag if there's already another copy of me running *and
+not suspended* in this terminal... Let's check!
+UID          PID STAT CMD
+root         116 S+   bash /challenge/run
+root         118 R+   ps -o user=UID,pid,stat,cmd
+I don't see a second me!
+To pass this level, you need to suspend me, resume the suspended process in the
+background, and then launch a new version of me! You can background me with
+Ctrl-Z (and resume me in the background with 'bg') or, if you're not ready to
+do that for whatever reason, just hit Enter and I'll exit!
+^Z
+[1]+  Stopped                 /challenge/run
+hacker@processes~backgrounding-processes:~$ bg
+[1]+ /challenge/run &
+Yay, I'm now running the background! Because of that, this text will probably
+overlap weirdly with the shell prompt. Don't panic; just hit Enter a few times
+to scroll this text out.
+hacker@processes~backgrounding-processes:~$ /challenge/run
+I'll only give you the flag if there's already another copy of me running *and
+not suspended* in this terminal... Let's check!
+UID          PID STAT CMD
+root         116 S    bash /challenge/run
+root         126 S    sleep 6h
+root         127 S+   bash /challenge/run
+root         129 R+   ps -o user=UID,pid,stat,cmd
+Yay, I found another version of me running in the background! Here is the flag:
+pwn.college{89OdGzf9IU4CDkBztlSokFKB05w.ddDN4QDLxgDO0czW}
+```
 
+## Foregrounding Process
+```
+hacker@processes~foregrounding-processes:~$ /challenge/run
+To pass this level, you need to suspend me, resume the suspended process in the
+background, and *then* foreground it without re-suspending it! You can
+background me with Ctrl-Z (and resume me in the background with 'bg') or, if
+you're not ready to do that for whatever reason, just hit Enter and I'll exit!
+^Z
+[1]+  Stopped                 /challenge/run
+hacker@processes~foregrounding-processes:~$ bg
+[1]+ /challenge/run &
+Yay, I'm now running the background! Because of that, this text will probably
+overlap weirdly with the shell prompt. Don't panic; just hit Enter a few times
+to scroll this text out. After that, resume me into the foreground with 'fg';
+I'll wait.
+hacker@processes~foregrounding-processes:~$ fg
+/challenge/run
+YES! Great job! I'm now running in the foreground. Hit Enter for your flag!
+pwn.college{U8NYqXyySnYpZ1c5DHto1rP9aMo.dhDN4QDLxgDO0czW}
+```
+
+## Starting Background Processes
+By using `&` command, we can start the backgrounded without suspending processes to background them.
+```
+hacker@processes~starting-backgrounded-processes:~$ /challenge/run &
+[1] 102
+
+
+Yay, you started me in the background! Because of that, this text will probably
+overlap weirdly with the shell prompt, but you're used to that by now...
+hacker@processes~starting-backgrounded-processes:~$
+Anyways! Here is your flag!
+pwn.college{Qtihdg5TpZ9AdpjrbA-ZePA7VeU.dlDN4QDLxgDO0czW}
+```
+
+## Process Exit Codes
+
+```
+hacker@processes~process-exit-codes:~$ echo $?
+40
+```
+retrieving the exit code returned by `/challenge/get-code` and then running `/challenge/submit-code` with that error code (in this case 40) as an argument.
+```
+hacker@processes~process-exit-codes:~$ /challenge/submit-code 40
+CORRECT! Here is your flag:
+pwn.college{QXAzrU9pQ8-kKcEXwgEnqIaHqvu.dljN4UDLxgDO0czW}
+```
 
 
 
