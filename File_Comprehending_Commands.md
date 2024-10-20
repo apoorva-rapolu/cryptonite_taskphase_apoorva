@@ -71,6 +71,9 @@ pwn.college{w6N1bv9uCHf06nGw0jMt-Y9kFxu.dBTN4QDLxgDO0czW}
 ```
 
 ## An Epic Filesystem Quest
+Using `cd`, `ls` and `cat` <br>
+Using `cd` for direct paths, and then catting the clue <br>
+Using `ls` to read out the file without 'cd'ing and then catting <br>
 ```
 hacker@commands~an-epic-filesystem-quest:~$ cd /
 hacker@commands~an-epic-filesystem-quest:/$ ls
@@ -88,6 +91,13 @@ Congratulations, you found the clue!
 The next clue is in: /usr/local/lib/python3.8/dist-packages/jedi/third_party/django-stubs/django-stubs/contrib/staticfiles/management/commands
 Watch out! The next clue is **trapped**. You'll need to read it out without 'cd'ing into the directory; otherwise, the clue will self destruct!    
 ```
+and so on... and then finally
+```
+CONGRATULATIONS! Your perserverence has paid off, and you have found the flag!
+It is: pwn.college{AYG2toUlMDriXQ3nOQPFh20zQVB.dljM4QDLxgDO0czW}
+```
+
+
 
 ## making directionaries 
 First to create `/tmp/pwn` directionary, `cd /tmp` and then `mkdir pwn` <br>
